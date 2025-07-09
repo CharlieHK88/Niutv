@@ -53,7 +53,7 @@ async function checkForUpdates() {
             latestFormatted: formatVersion(cleanLatestVersion)
         };
     } catch (error) {
-        console.error('版本检测出错:', error);
+        //console.error('版本检测出错:', error);
         throw error;
     }
 }
@@ -138,7 +138,7 @@ function addVersionInfoToFooter() {
         // 显示版本元素
         displayVersionElement(versionElement);
     }).catch(error => {
-        console.error('版本检测出错:', error);
+        //console.error('版本检测出错:', error);
         // 创建错误版本信息元素并显示
         const errorElement = createErrorVersionElement(`错误信息: ${error.message}`);
         displayVersionElement(errorElement);
